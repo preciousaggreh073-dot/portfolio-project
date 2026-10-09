@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arik. - How to Build a Stunning Website with Framer</title>
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            darkbg: '#0a0a0a',
+            cardbg: '#121212',
+            bordercol: '#222222',
+            mutedtext: '#888888',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-darkbg text-stone-300 font-sans antialiased selection:bg-stone-700 selection:text-white">
+
+  <!-- TOP NAVBAR -->
+  <header class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between border-b border-bordercol text-xs uppercase tracking-widest text-mutedtext">
+    <div class="font-bold text-stone-100 tracking-wider">arik.</div>
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="#" class="hover:text-stone-100 transition">Services</a>
+      <a href="#" class="hover:text-stone-100 transition">Work</a>
+      <a href="#" class="hover:text-stone-100 transition">About</a>
+      <a href="#" class="hover:text-stone-100 transition">Blog</a>
+      <a href="#" class="hover:text-stone-100 transition">Parts</a>
+    </nav>
+    <div>
+      <a href="#" class="bg-stone-200 text-stone-900 px-4 py-2 rounded-full font-medium hover:bg-white transition">Let's Talk</a>
+    </div>
+  </header>
+
+  <!-- MAIN ARTICLE CONTAINER -->
+  <main class="max-w-4xl mx-auto px-6 pt-16 pb-24">
+    
+    <!-- ARTICLE HEADER -->
+    <div class="text-center space-y-6">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight text-stone-100 leading-[1.1]">
+        How to Build a Stunning Website <br> with Framer
+      </h1>
+      <p class="text-mutedtext text-sm sm:text-base max-w-lg mx-auto">
+        Learn how to create an impressive website using Framer with our step-by-step guide.
+      </p>
+      <div class="pt-4">
+        <a href="#content" class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-mutedtext hover:text-stone-100 transition">
+          <span>↓</span> Read More
+        </a>
+      </div>
+    </div>
+
+    <!-- METADATA BAR -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 my-16 py-4 border-y border-bordercol text-[11px] uppercase tracking-widest text-mutedtext text-center">
+      <div>
+        <span class="block text-stone-500 mb-1">MAPS</span>
+        <span class="text-stone-300 font-medium">—</span>
+      </div>
+      <div>
+        <span class="block text-stone-500 mb-1">DATE PUBLISHED</span>
+        <span class="text-stone-300 font-medium">9 AUG 2025</span>
+      </div>
+      <div>
+        <span class="block text-stone-500 mb-1">CATEGORY</span>
+        <span class="text-stone-300 font-medium">DESIGN</span>
+      </div>
+      <div>
+        <span class="block text-stone-500 mb-1">WEB DESIGN</span>
+        <span class="text-stone-300 font-medium">FRAMER</span>
+      </div>
+      <div>
+        <span class="block text-stone-500 mb-1">READING TIME</span>
+        <span class="text-stone-300 font-medium">4 MIN</span>
+      </div>
+      <div>
+        <span class="block text-stone-500 mb-1">AUTHOR</span>
+        <span class="text-stone-300 font-medium">ARIK</span>
+      </div>
+    </div>
+
+    <!-- FEATURED IMAGE / BANNER -->
+    <div id="content" class="rounded-xl overflow-hidden border border-bordercol bg-cardbg mb-16 shadow-2xl">
+      <div class="w-full h-[320px] sm:h-[450px] relative overflow-hidden bg-stone-950">
+        <img 
+          src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1600&auto=format&fit=crop" 
+          alt="Framer Studio Preview" 
+          class="w-full h-full object-cover object-center opacity-85 hover:scale-105 transition duration-700"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-stone-950/60 via-transparent to-transparent pointer-events-none"></div>
+      </div>
+    </div>
+
+    <!-- ARTICLE BODY -->
+    <article class="max-w-2xl mx-auto space-y-12 text-stone-400 text-base leading-relaxed">
+      
+      <section class="space-y-4">
+        <h2 class="text-xl font-medium text-stone-200">Setting Up Your Workspace</h2>
+        <p>
+          Before diving into complex animations and visual styling, establishing a clean canvas is essential. Organize your project layers, set up responsive global styles, and define your color tokens early to ensure consistency throughout your entire design system.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h3 class="text-lg font-medium text-stone-200">Mastering Responsive Breakpoints</h3>
+        <p>
+          A great website adapts seamlessly across devices. Utilize Framer's built-in stack and grid controls to define fluid layouts, ensuring your typography and components scale naturally from compact mobile screens up to expansive desktop displays.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h3 class="text-lg font-medium text-stone-200">Publishing and Performance</h3>
+        <p>
+          Once your components and interactions are polished, optimize your assets and run a final responsiveness check before publishing live. Clean code architecture and fast load times ensure your portfolio delivers an exceptional experience to every visitor.
+        </p>
+      </section>
+
+      <!-- CONCLUSION & AUTHOR BOX -->
+      <div class="pt-8 border-t border-bordercol space-y-6">
+        <h3 class="text-lg font-medium text-stone-200">Conclusion</h3>
+        <p class="text-sm">
+          Building high-end digital experiences requires patience, precision, and an eye for clean typography. By combining modern design tools with robust frontend styling, you can turn any creative vision into a production-ready reality.
+        </p>
+
+        <!-- Author Card -->
+        <div class="flex items-center gap-4 bg-cardbg p-4 rounded-xl border border-bordercol mt-6">
+          <div class="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center font-bold text-stone-300">
+            AA
+          </div>
+          <div>
+            <h4 class="text-stone-200 font-medium text-sm">Arik Anderson</h4>
+            <p class="text-xs text-mutedtext">Framer Expert</p>
+          </div>
+        </div>
+
+        <!-- Social Share / Links Bar -->
+        <div class="grid grid-cols-3 gap-2 pt-4 text-center text-xs tracking-wider uppercase">
+          <a href="#" class="py-3 bg-cardbg border border-bordercol rounded-lg hover:bg-stone-900 transition text-stone-400 hover:text-stone-200">Instagram</a>
+          <a href="#" class="py-3 bg-cardbg border border-bordercol rounded-lg hover:bg-stone-900 transition text-stone-400 hover:text-stone-200">Twitter</a>
+          <a href="#" class="py-3 bg-cardbg border border-bordercol rounded-lg hover:bg-stone-900 transition text-stone-400 hover:text-stone-200">Facebook</a>
+        </div>
+      </div>
+
+    </article>
+
+  </main>
+
+  <!-- RELATED NEWS SECTION -->
+  <section class="max-w-6xl mx-auto px-6 py-16 border-t border-bordercol">
+    <div class="flex items-center justify-between mb-8">
+      <h2 class="text-xl font-normal text-stone-200 tracking-tight">Related News</h2>
+      <a href="#" class="text-xs uppercase tracking-widest text-mutedtext hover:text-stone-100 transition">See All →</a>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Card 1 -->
+      <div class="bg-cardbg border border-bordercol rounded-xl overflow-hidden group hover:border-stone-700 transition">
+        <div class="h-44 bg-stone-900 relative overflow-hidden flex items-center justify-center">
+          <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=800&auto=format&fit=crop" alt="Framer Website Setup" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-tr from-amber-950/20 to-transparent"></div>
+        </div>
+        <div class="p-5 space-y-3">
+          <span class="text-[10px] uppercase tracking-widest text-mutedtext block">9 AUG 2025</span>
+          <h3 class="text-stone-200 font-medium text-base group-hover:text-amber-400 transition leading-snug">
+            How to Build a Stunning Website with Framer
+          </h3>
+          <p class="text-xs text-mutedtext line-clamp-2">
+            Learn how to create an impressive website using Framer with our step-by-step guide.
+          </p>
+          <div class="pt-2">
+            <span class="text-[10px] tracking-widest uppercase text-stone-500 font-mono bg-stone-900 px-2 py-1 rounded">Webdesign</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-cardbg border border-bordercol rounded-xl overflow-hidden group hover:border-stone-700 transition">
+        <div class="h-44 bg-stone-900 relative overflow-hidden flex items-center justify-center">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" alt="User Engagement Elements" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-tr from-orange-950/20 to-transparent"></div>
+        </div>
+        <div class="p-5 space-y-3">
+          <span class="text-[10px] uppercase tracking-widest text-mutedtext block">9 AUG 2025</span>
+          <h3 class="text-stone-200 font-medium text-base group-hover:text-amber-400 transition leading-snug">
+            10 website elements for maximum user engagement
+          </h3>
+          <p class="text-xs text-mutedtext line-clamp-2">
+            10 website elements to engage users, from clear navigation to converting visuals.
+          </p>
+          <div class="pt-2">
+            <span class="text-[10px] tracking-widest uppercase text-stone-500 font-mono bg-stone-900 px-2 py-1 rounded">Webdesign</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-cardbg border border-bordercol rounded-xl overflow-hidden group hover:border-stone-700 transition">
+        <div class="h-44 bg-stone-900 relative overflow-hidden flex items-center justify-center">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="Website Traffic Content" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-tr from-emerald-950/20 to-transparent"></div>
+        </div>
+        <div class="p-5 space-y-3">
+          <span class="text-[10px] uppercase tracking-widest text-mutedtext block">9 AUG 2025</span>
+          <h3 class="text-stone-200 font-medium text-base group-hover:text-amber-400 transition leading-snug">
+            The importance of content in driving website traffic
+          </h3>
+          <p class="text-xs text-mutedtext line-clamp-2">
+            Quality content is king. Learn how to drive traffic, boost SEO, and engage visitors.
+          </p>
+          <div class="pt-2">
+            <span class="text-[10px] tracking-widest uppercase text-stone-500 font-mono bg-stone-900 px-2 py-1 rounded">Webdesign</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION BANNER -->
+  <section class="max-w-4xl mx-auto px-6 py-24 text-center space-y-6">
+    <span class="text-[10px] uppercase tracking-widest text-mutedtext">PROJECT MINDSET</span>
+    <h2 class="text-3xl sm:text-5xl font-normal text-stone-100 tracking-tight">
+      Let’s make your <br> <span class="italic font-serif text-stone-300">Website shine</span>
+    </h2>
+    <p class="text-mutedtext text-sm max-w-sm mx-auto">
+      Premium web design, Webflow, and SEO services to help your business stand out.
+    </p>
+    <div class="pt-4">
+      <a href="#" class="inline-block bg-stone-200 text-stone-900 px-6 py-3 rounded-full text-xs font-semibold uppercase tracking-widest hover:bg-white transition">
+        Get in Touch ↗
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="max-w-6xl mx-auto px-6 py-12 border-t border-bordercol grid grid-cols-1 md:grid-cols-4 gap-8 text-xs text-mutedtext">
+    <div class="space-y-4">
+      <span class="font-bold text-stone-200 tracking-wider">arik.</span>
+      <ul class="space-y-2 pt-2">
+        <li><a href="#" class="hover:text-stone-200 transition">Instagram</a></li>
+        <li><a href="#" class="hover:text-stone-200 transition">Twitter</a></li>
+        <li><a href="#" class="hover:text-stone-200 transition">Dribbble</a></li>
+        <li><a href="#" class="hover:text-stone-200 transition">Behance</a></li>
+      </ul>
+    </div>
+    <div class="space-y-2">
+      <span class="font-bold text-stone-400 tracking-wider uppercase">Pages</span>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-stone-200 transition">Home</a></li>
+        <li><a href="#" class="hover:text-stone-200 transition">Services</a></li>
+        <li><a href="#" class="hover:text-stone-200 transition">About</a></li>
+        <li><a href="#" class="hover:text-stone-200 transition">Contact</a></li>
+      </ul>
+    </div>
+    <div class="space-y-2">
+      <span class="font-bold text-stone-400 tracking-wider uppercase">CMS</span>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-stone-200 transition">Work</a></li>
+        <li><a href="#" class="hover:text-stone-200 transition">Work Single</a></li>
+        <li><a href="#" class="hover:text-stone-200 transition">Blog</a></li>
+        <li><a href="#" class="hover:text-stone-200 transition">Blog Post</a></li>
+      </ul>
+    </div>
+    <div class="space-y-2">
+      <span class="font-bold text-stone-400 tracking-wider uppercase">Utility Pages</span>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-stone-200 transition">404 Error Page</a></li>
+        <li><a href="#" class="hover:text-stone-200 transition">Password Protected</a></li>
+        <li><a href="#" class="hover:text-stone-200 transition">Styleguide</a></li>
+        <li><a href="#" class="hover:text-stone-200 transition">Licenses</a></li>
+        <li><a href="#" class="hover:text-stone-200 transition">Changelog</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+  <div class="max-w-6xl mx-auto px-6 py-6 text-center text-[10px] text-stone-600 border-t border-bordercol/50 flex justify-between">
+    <span>© 2025 Made by, Developed by <span class="text-stone-400">Arik</span>. All rights reserved.</span>
+    <a href="#" class="hover:text-stone-400">To Top ↑</a>
+  </div>
+
+</body>
+</html>
